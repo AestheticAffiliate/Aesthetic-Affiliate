@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Aesthetic Affiliate</title>
+<style>
+  /* Reset & base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+    background: #f9f9f9;
+    color: #333;
+  }
+  a {
+    color: #ff6f61;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Header */
+  header {
+    background: #fff;
+    border-bottom: 2px solid #ff6f61;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    font-weight: 700;
+    color: #ff6f61;
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  nav a {
+    margin-left: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  /* Hero section */
+  .hero {
+    background: linear-gradient(135deg, #ff6f61 0%, #fcb69f 100%);
+    color: white;
+    padding: 80px 30px;
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+  .hero button {
+    background: #fff;
+    color: #ff6f61;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  .hero button:hover {
+    background: #ff4b3e;
+    color: white;
+  }
+
+  /* Main content wrapper */
+  main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  /* Featured Products grid */
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+  }
+  .product-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .product-card .info {
+    padding: 15px;
+    flex-grow: 1;
+  }
+  .product-card h3 {
+    margin: 0 0 10px 0;
+    font-weight: 700;
+  }
+  .product-card p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #666;
+  }
+  .product-card a {
+    margin-top: auto;
+    display: inline-block;
+    background: #ff6f61;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .product-card a:hover {
+    background: #e6554b;
+  }
+
+  /* Footer */
+  footer {
+    background: #333;
+    color: #eee;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 60px;
+    font-size: 0.9rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin-left: 0;
+      margin-right: 15px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Aesthetic Affiliate</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#shop">Shop</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h2>Discover Trending & Beautiful Products</h2>
+  <p>Your go-to source for the best Amazon finds, curated with style and ease. Elevate your Pinterest boards and shopping game!</p>
+  <button onclick="location.href='#shop'">Shop Now</button>
+</section>
+
+<main>
+
+  <section id="about">
+    <h2>About Aesthetic Affiliate</h2>
+    <p>We combine the art of aesthetics with smart affiliate marketing to bring you the latest, trendiest products from Amazon and beyond. Whether you're a Pinterest enthusiast or a savvy shopper, we help you find beauty and value in every click.</p>
+  </section>
+
+  <section id="shop">
+    <h2>Featured Products</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=Product+1" alt="Product 1" />
+        <div class="info">
+          <h3>Stylish Bluetooth Speaker</h3>
+          <p>Compact, sleek design with powerful sound. Perfect for any room or outdoor fun.</p>
+          <a href="https://www.amazon.com" target="_blank" rel="nofollow noopener">Buy on Amazon</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=Product+2" alt="Product 2" />
+        <div class="info">
+          <h3>Minimalist Desk Lamp</h3>
+          <p>Adjustable brightness with warm tones to enhance your workspace ambiance.</p>
+          <a href="https://www.amazon.com" target="_blank" rel="nofollow noopener">Buy on Amazon</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=Product+3" alt="Product 3" />
+        <div class="info">
+          <h3>Elegant Ceramic Planter</h3>
+          <p>Add a touch of nature and elegance to your home or office decor.</p>
+          <a href="https://www.amazon.com" target="_blank" rel="nofollow noopener">Buy on Amazon</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>From Our Blog</h2>
+    <article>
+      <h3>Top 5 Trending Products for Summer 2025</h3>
+      <p>Explore the hottest Amazon finds this summer and get inspired to refresh your style and space.</p>
+      <a href="#">Read More</a>
+    </article>
+    <article>
+      <h3>How to Curate Pinterest Boards That Convert</h3>
+      <p>Learn tips and tricks to attract followers and boost affiliate sales through stunning Pinterest boards.</p>
+      <a href="#">Read More</a>
+    </article>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Questions, collaborations, or just want to say hi? Drop a message below.</p>
+    <form action="#" method="POST">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required style="width:100%; padding:8px; margin-bottom:10px;" /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required style="width:100%; padding:8px; margin-bottom:10px;" /><br />
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="5" required style="width:100%; padding:8px;"></textarea><br /><br />
+      <button type="submit" style="background:#ff6f61; color:white; border:none; padding:12px 25px; font-weight:700; cursor:pointer; border-radius:5px;">Send</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 Aesthetic Affiliate. All rights reserved.
+</footer>
+
+</body>
+</html>
